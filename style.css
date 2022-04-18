@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+    /*// выбираю все теги*/
+}
+body{
+    margin:0;
+    /*убрали отступы*/
+    background: black;
+    /*//стиль для окружения*/
+    color: aqua;
+    font-family: sans-serif;
+}
+.main{
+    /*<!--main-игровое поле для тетриса 10x20.
+    Длина и ширина одной клетики 30х30рх -->
+*/
+    width: 320px;
+    height: 620px;
+    /*20px для рамки*/
+    margin: 40px auto 0;
+    border:10px solid silver;
+    font-size: 0;
+}
+#game{
+    padding-top: 20px;
+    width: 320px;
+    margin: auto;
+    font-size:40px ;
+}
+.cell{
+    width: 30px;
+    height: 30px;
+    border: 1px solid silver;
+    /*Ставим борты квадраты*/
+    display: inline-block;
+}
+.movingSell{
+/*    дивгающиеся фигуры*/
+    background-color: blue;
+}
+.fixed{
+    /*Спущеные фигуры*/
+    background: green;
+}
